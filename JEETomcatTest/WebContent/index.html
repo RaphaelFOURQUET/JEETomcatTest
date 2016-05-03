@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+span {
+	color: RED;
+	font-size: 300%;
+}
+
+.remarque {
+	font-style: italic;
+	font-size: 150%;
+}
+
+.remarqueImportante {
+	text-decoration: underline;
+	font-size : 200%;
+}
+
+.test {
+	background-color: green;
+}
+
+#article {
+	color: green;
+}
+</style>
+</head>
+<body>
+	Coucou<br />
+	C'est moi !<br />
+	<!-- span est un element basique du mode inline -->
+	<span id="article" class="remarque">Voila un span d'id article et de classe remarque!</span><br/>
+	<span class="remarqueImportante">Voila un autre span de classe remarqueImportante!</span><br/>
+	<span class=test>Et un autre span de classe test!</span><br/>
+	<span>Et un autre span !</span><br/>
+	<span>Et un autre span !</span><br/>
+	<span class="remarque">Et un autre span de classe remarque!</span><br/>
+	
+	<!-- div est un element basique du mode bloc. -->
+	<div>Voici une div.</div>
+	<div class=test>Et une autre div de classe test.</div>
+	
+	<!-- Hyper lien vers google -->
+	<a href="http://www.google.fr">Hyper lien.</a><br/>
+	
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	
+	<form method="get" action="toto.html"> <!-- On envoie ce formulaire à toto.html -->
+		<label for="nom">Nom de famille : </label>
+		<input name="nom" type="text"/><br/>
+		
+		<label for="genre">Homme : </label>
+		<input type="radio" name="genre" value="Homme"/>
+		<label for="genre">Femme : </label>
+		<input type="radio" name="genre" value="Femme"/><br/>
+		
+		<label for="checkbox">Checkbox : </label>
+		<input type="checkbox" name="checkbox"/><br/>
+		
+		<label for="cat">Catégorie</label>
+		<select id="cat" name="categorie">
+			<option value="a">Arbre</option>
+			<option value="b">Fleur</option>
+			<option value="c">Fruit</option>
+		</select><br/>
+		
+		<label for="cat2">Catégorie2</label>
+		<select id="cat2" name="categorie2" multiple="multiple">
+			<option value="a">Arbre</option>
+			<option value="b">Fleur</option>
+			<option value="c">Fruit</option>
+		</select><br/>
+		
+		<input type="file"/><br/>
+		
+		
+		<input type="submit"/>
+	</form>
+	
+	End body.
+</body>
+</html>
